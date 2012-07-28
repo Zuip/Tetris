@@ -1,3 +1,4 @@
+# Compiler
 CCC = g++
 
 # Objectfiles
@@ -14,7 +15,6 @@ FLAGS = -lallegro -lallegro_color -lallegro_primitives -lallegro_ttf -lallegro_f
 	$(CCC) -c $(FLAGS) -o $@ $<
 
 # Linking objectfiles
-
 $(BIN): $(OBJS)
 	$(CCC) $(OBJS) $(FLAGS) -o $(BIN)
 
